@@ -5,16 +5,17 @@
         android:allowBackup="false"
         android:label="LEADEN1 Button Diagnostic"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.Material.Light.NoActionBar"
+        android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
 
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:category="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
     </application>
+
 </manifest>
