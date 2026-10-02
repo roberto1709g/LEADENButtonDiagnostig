@@ -5,7 +5,7 @@
         android:allowBackup="false"
         android:label="LEADEN1 Button Diagnostic"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LEADEN1">
+        android:theme="@android:style/Theme.Material.Light.NoActionBar"
 
         <activity
             android:name=".MainActivity"
