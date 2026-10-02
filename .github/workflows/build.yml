@@ -11,6 +11,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Rename translated folders if necessary
+        run: |
+          if [ -d "aplicación" ]; then mv "aplicación" app; fi
+          if [ -f "configuración.gradle" ]; then mv "configuración.gradle" settings.gradle; fi
+          if [ -f "propiedades de gradle" ]; then mv "propiedades de gradle" gradle.properties; fi
+
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
